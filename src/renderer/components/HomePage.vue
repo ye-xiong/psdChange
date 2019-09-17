@@ -51,11 +51,7 @@ export default {
   },
   watch: {
     state (val) {
-      if (val) {
-        this.loading = true
-      } else {
-        this.loading = false
-      }
+      this.loading = Boolean(val)
     }
   }
 }
